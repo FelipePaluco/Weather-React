@@ -62,3 +62,8 @@ npm run lint
 ```
 npm run prettier
 ```
+
+## Preview
+![Screenshot 2024-05-19 at 15 17 24](https://github.com/FelipePaluco/Weather-React/assets/87909998/f493c806-3287-4b1c-b982-2d64a7bd4cb5)
+
+

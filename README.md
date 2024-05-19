@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+Clone this repository on your local machine, then create a .env file on the root of the cloned repository.
+
+Insert this on .env file:
+```
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY = 'AIzaSyDHQ0vUkDG0hyUrpkiqseAzI4YLOB3GYhE'
+NEXT_PUBLIC_OPEN_WEATHER_API_KEY = '8906ba17b3e1cd2fb9d46ac9dce1fc44'
+```
+
+After it, run
+
+```
+npm ci
+```
+
+Now you are ready to go! You may want to choose of the options below to start the application.
+
+### Development Server
+
+To run the development server, run:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Building
+To build the application, run:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm run build
+```
 
-## Learn More
+To start the built bundle pack, run:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Opening the application
+After installing the dependencies and having .env created, you can run some of the provided commands above and open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Docker
+The project contains a NextJS dockerfile, which means that you can run the application inside of a docker container, to do this follow these steps:
 
-## Deploy on Vercel
+1. Install Docker on your machine
+2. Clone this repository
+3. Build your container: `docker build -t weatherapp-docker` 
+4. Run your container: `docker run -p 3000:3000 weatherapp-docker`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Bonus
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Lint
+
+```
+npm run lint
+```
+
+### Formatting
+
+```
+npm run prettier
+```

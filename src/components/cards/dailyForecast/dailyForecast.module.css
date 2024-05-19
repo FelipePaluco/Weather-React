@@ -1,0 +1,44 @@
+.dailyForecastCard {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px 0;
+  width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  color: #666;
+  text-align: center;
+}
+
+.dailyForecastInformation {
+  display: flex;
+  justify-content: space-around;
+}
+
+.day {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.dayTemp {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dayCondition {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  max-width: 100px;
+  word-wrap: break-word;
+}
+
+.dayName {
+  font-size: 14px;
+  color: #666;
+}
